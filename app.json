@@ -1,0 +1,12 @@
+{
+  "name": "react-native-wg",
+  "displayName": "react-native-wg",
+  "expo": {
+    "name": "react-native-wg",
+    "slug": "react-native-wg",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
