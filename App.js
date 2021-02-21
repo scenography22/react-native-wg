@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { View } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -8,21 +7,17 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './components/Home';
 import Store from './components/Store';
-import List from './components/Search';
+import Search from './components/Search';
 import Actions from './components/Actions';
-import Details from './components/Details'
-import { LISTDATA } from './shared/list'
+import Details from './components/Details';
 
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-// https://ionicons.com/
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-
 import rootReducer from './redux/reducers'
-import Search from './components/Search';
 
 const store = createStore(rootReducer);
 
@@ -97,7 +92,6 @@ const screenOptions = ({ route }) => ({
 
     }
 
-    // You can return any component that you like here!
     return <Ionicons name={iconName} size={size} color={color} />;
   }
 })

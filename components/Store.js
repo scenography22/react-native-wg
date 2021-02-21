@@ -1,16 +1,10 @@
 import React from 'react';
 import { View } from 'react-native';
-
-import { LISTDATA } from '../shared/list'
-
 import { ListItem, Avatar } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
 
-// 함수의 리턴 값이 JSX.Element면
-// React 컴포넌트가 된다.
+import { LISTDATA } from '../shared/list'
 
-// JSX를 쓰려면 import React from 'react';
-// Navigator로 화면을 이동할 때 컴포넌트 속성으로 전달됨
 const Store = ({ navigation }) => {
 
   const list = LISTDATA;

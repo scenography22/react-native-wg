@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Text, View, Button } from 'react-native';
+import { View } from 'react-native';
 import { SearchBar } from 'react-native-elements';
 import SearchList from './SearchList'
 
