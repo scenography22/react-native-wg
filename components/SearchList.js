@@ -1,8 +1,6 @@
 import React from 'react';
-import { View } from 'react-native';
 import { LISTDATA } from '../shared/list'
 
-// https://reactnativeelements.com/docs
 import { ListItem, Avatar } from 'react-native-elements'
 
 const SearchList = ({ navigation, keyword }) => {
