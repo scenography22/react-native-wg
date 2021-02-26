@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import { LISTDATA } from '../shared/list'
 
 import { ListItem, Avatar } from 'react-native-elements'

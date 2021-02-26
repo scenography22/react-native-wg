@@ -1,18 +1,16 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import { LISTDATA } from '../shared/list'
+import { Text, View, StyleSheet, ProgressBarAndroid } from 'react-native';
 
 import { Card, Icon } from 'react-native-elements'
 import { ScrollView } from 'react-native-gesture-handler'
 
-const Home = ({ navigation }) => {
+const Home = ({ navigation, list }) => {
 
-  const list = LISTDATA;
-  console.log("huhuhuhuhuhuhuhuhuhu");
-  console.log(list);
 
   return (
     <View style={styles.container}>
+      { !list && <ProgressBarAndroid />}
+      { list &&
       <ScrollView>
 
       <View style={{height:40, backgroundColor:'white', marginTop:10, flexDirection:'row', justifyContent:'space-between'}} >
@@ -77,13 +75,14 @@ const Home = ({ navigation }) => {
       </View>
 
     </ScrollView>
+    }
   </View>
   )
 }
 
 const styles = StyleSheet.create({
   container:{
-    flex: 1, backgroundColor:"white"
+    flex: 1, backgroundColor:"white", justifyContent:"center"
   },
   headertitle : {
     textAlign:'center', color:"#ffffff", fontSize:26
