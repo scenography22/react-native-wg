@@ -50,14 +50,14 @@ const Details = ({ route, navigation }) => {
               onPress={()=>{dispatch(removeAction(id))}}
               icon={<Icon name='close-circle' type='ionicon' color='#ffffff' />}
               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor:"gray"}}
-              title='  내 서재에서 삭제' 
+              title='  내 서재에서 삭제!' 
             /> 
             :
             <Button
               onPress={()=>{dispatch(addAction(item))}}
               icon={<Icon name='add-circle' type='ionicon' color='#ffffff' />}
               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor:"#405AA9"}}
-              title='  내 서재에 추가' 
+              title='  내 서재에 추가!' 
             />    
         }
         <Card.Divider/>
