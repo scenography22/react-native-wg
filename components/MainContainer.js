@@ -11,6 +11,7 @@ import Store from './StoreContainer';
 import Search from './Search';
 import Tasks from './Tasks';
 import Details from './Details';
+import HWTest from './HWTest'
 
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Alert } from 'react-native'
@@ -85,7 +86,11 @@ const screenOptions = ({ route }) => ({
           ? 'library'
           : 'library-outline';
         break;
-
+      case 'HWTest':
+        iconName = focused
+          ? 'hardware-chip'
+          : 'hardware-chip-outline'; 
+        break; 
     }
 
     return <Ionicons name={iconName} size={size} color={color} />;
@@ -129,6 +134,7 @@ export default function Main() {
             <Tab.Screen name="서점" component={StoreStackScreen} />
             <Tab.Screen name="검색" component={SearchStackScreen} />
             <Tab.Screen name="내서재" component={TaskStackScreen} />
+            <Tab.Screen name="HWTest" component={HWTest} />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>
